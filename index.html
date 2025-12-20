@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshit | Portfolio</title>    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="typed.umd.js"></script>
+</head>
+<body>
+
+    <div class="video-container" id="parallax-bg">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="BackgroundVideo.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#Certifications">Certfications</a>
+            <a href="javascript:void(0)" onclick="toggleAwards()">Awards</a>
+        </nav>
+        <a href="#" class="btn">Download CV</a>
+    </header>
+
+    <div class="popup-overlay" id="awardsPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Credly Certifications & Awards</h2>
+            </div>
+            <div class="awards-grid">
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e2b1bb8a-4266-4799-b2e5-05736d330c14" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a536d7bf-1b0a-4676-9ce5-2ab9dcd54609" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="fb29a526-dcf0-4ecd-b1df-adb73a662667" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ff46942f-43fb-471e-a864-7a336616aa82" data-share-badge-host="https://www.credly.com"></div>
+                
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="TJ5954Ff5TrWv5C55sljWA" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            
+            <button class="btn" onclick="toggleAwards()" style="margin-top: 20px;">Close</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+    <section class="home" id="home" style="display: flex; align-items: center; padding: 10% 9%; height: 100vh;">
+        <div class="home-content" style="flex: 1;">
+            <h3 style="font-size: 2rem;">Hello, I'm</h3>
+            <h1 style="font-size: 4rem; line-height: 1.2;">Rakshit</h1>
+            <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">
+                And I'm a <span id="typing-text" style="color: #00eeff;"></span>
+            </h3>       
+            
+            <div class="social-icons" style="margin-bottom: 2rem; position: relative;">
+
+                <a href="https://www.linkedin.com/in/rakshit-rao-b2994b113/" 
+                   target="_blank" 
+                   style="font-size: 1.5rem; margin-right: 15px; color: #00eeff;">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://www.upwork.com/freelancers/~01d910049c825bb661?mp_source=share" 
+                    target="_blank" 
+                    style="font-size: 1.5rem; margin-right: 15px; color: #00eeff;">
+                    <i class='bx bxl-upwork'></i>
+                </a>
+
+                <a href="https://github.com/rakshitrao-dev" 
+                target="_blank" 
+                class="github-trigger"
+                style="font-size: 1.5rem; margin-right: 15px; color: #00eeff;">
+                 <i class='bx bxl-github' ></i>
+                </a>
+
+            
+                <div class="site-preview">
+                    <div class="preview-header">
+                        <div class="dot"></div>
+                        <div class="dot" style="background:#ffbd2e"></div>
+                        <div class="dot" style="background:#27c93f"></div>
+                    </div>
+                    <div style="padding: 20px; text-align: center;">
+                        <i class='bx bxl-github' style="font-size: 3rem; color: #00eeff;"></i>
+                        <p style="color: white; margin: 10px 0;">Explore my Github Repos</p>
+                        <a href="https://github.com/rakshitrao-dev?tab=repositories" target="_blank" class="btn" style="display: inline-block;">View GitHub</a>
+                    </div>  
+                </div>
+            </div>
+            
+            <a href="#contact" class="btn" onclick="togglePopup()" style="background: #00eeff; padding: 10px 25px; border-radius: 8px; color: black; font-weight: bold; text-decoration: none;">Contact Me</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQGaFUqGLKA8EA/profile-displayphoto-crop_800_800/B56Zs4MKp4G8AI-/0/1766174275436?e=1767830400&v=beta&t=xCb-DoBwHertM7JSPhSyucOlJ0HX3k-J-XVFFhOtrD4" 
+                 alt="Profile Image" 
+                 style="width: 350px; border-radius: 50%; border: 4px solid #00eeff; box-shadow: 0 0 25px #00eeff;">
+        </div>
+
+
+    <div class="popup-overlay" id="contactPopup">
+        <div class="glass-popup">
+            <span class="close-btn" onclick="togglePopup()">&times;</span>
+            <h2 style="margin-bottom: 10px;">Contact Details</h2>
+            <hr style="border: 0.5px solid rgba(255,255,255,0.2);">
+            <div class="popup-info">
+                <p><i class='bx bx-envelope'></i> <strong>Email:</strong> rakshitrao131@gmail.com</p>
+                <p><i class='bx bx-phone'></i> <strong>Phone:</strong> +91-8762163414</p>
+                <p><i class='bx bx-map'></i> <strong>Location:</strong> Bengaluru, India</p>
+            </div>
+            <button class="btn" onclick="togglePopup()" style="background: #00eeff; padding: 8px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px;">Close</button>
+        </div>
+    </div>
+
+
+    <nav class="bottom-nav">
+        <a href="#home"><i class='bx bx-home-alt'></i></a>
+        <a href="#skills"><i class='bx bx-user'></i></a>
+        <a href="#portfolio"><i class='bx bx-book'></i></a>
+        <a href="#contact"><i class='bx bx-message-square-detail'></i></a>
+    </nav>
+    
+
+    <script>
+        // Typing Animation Setup
+        var typed = new Typed('#typing-text', {
+            strings: [
+                'SAP Technical Consultant', 
+                'Frontend Developer', 
+                'Cybersecurity Enthusiast'
+            ],
+            typeSpeed: 70,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true
+        });
+
+        // Popup Toggle Function
+        function togglePopup() {
+            const popup = document.getElementById('contactPopup');
+            popup.classList.toggle('active');
+        }
+
+        // Close popup if user clicks outside the glass box
+        window.onclick = function(event) {
+            const popup = document.getElementById('contactPopup');
+            if (event.target == popup) {
+                popup.classList.remove('active');
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
