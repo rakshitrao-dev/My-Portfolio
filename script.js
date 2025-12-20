@@ -22,3 +22,17 @@ window.addEventListener('click', function(event) {
         awardsPopup.classList.remove('active');
     }
 });
+
+
+function toggleCertifications() {
+    const certificationsPopup = document.getElementById('certificationsPopup');
+    certificationsPopup.classList.toggle('active');
+}
+
+// Close awards popup if user clicks outside the glass box
+window.addEventListener('click', function(event) {
+    const certificationsPopup = document.getElementById('certificationsPopup');
+    if (event.target == certificationsPopup) {
+        certificationsPopup.classList.remove('active');
+    }
+});

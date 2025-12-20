@@ -20,19 +20,56 @@
     <header class="header">
         <a href="#" class="logo">Portfolio<span>.</span></a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#services">Services</a>
-            <a href="#Certifications">Certfications</a>
-            <a href="javascript:void(0)" onclick="toggleAwards()">Awards</a>
+            <div class="dropdown">
+            <a href="#skills" class="dropbtn">Skills <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content mega-menu">
+                    <div class="column">
+                        <h4>SAP</h4>
+                        <a href="#">Ariba P2P/SCC</a>
+                        <a href="#">BTP & CIG</a>
+                        <a href="#">ABAP Debug</a>
+                    </div>
+                    <div class="column">
+                        <h4>Development</h4>
+                        <a href="#">HTML/CSS/JS</a>
+                        <a href="#">Python</a>
+                        <a href="#">UI/UX Design</a>
+                    </div>
+                    <div class="column">
+                        <h4>Security</h4>
+                        <a href="#">Kali/Tor</a>
+                        <a href="#">Burp Suite</a>
+                        <a href="#">Wireshark</a>
+                    </div>
+                </div>
+            </div>           
+            <div class="dropdown">
+                <a href="#services" class="dropbtn">Services <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content mega-menu">
+                    <div class="column">
+                        <h4>SAP & Integration</h4>
+                        <a href="#services">SAP Ariba Consulting</a>
+                        <a href="#services">CIG Integration</a>
+                        <a href="#services">Technical Consulting</a>
+                    </div>
+                    <div class="column">
+                        <h4>Creative & Security</h4>
+                        <a href="#services">UI/UX Customization</a>
+                        <a href="#services">Website Security Testing</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="javascript:void(0)" onclick="toggleCertifications()">Certifications</a>
+             <a href="javascript:void(0)" onclick="toggleAwards()">Awards</a>
         </nav>
         <a href="#" class="btn">Download CV</a>
     </header>
 
-    <div class="popup-overlay" id="awardsPopup">
+    <div class="popup-overlay" id="certificationsPopup">
         <div class="popup-content">
             <div class="popup-header">
-                <h2>Credly Certifications & Awards</h2>
+                <h2>Certifications</h2>
             </div>
             <div class="awards-grid">
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e2b1bb8a-4266-4799-b2e5-05736d330c14" data-share-badge-host="https://www.credly.com"></div>
@@ -41,14 +78,30 @@
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ff46942f-43fb-471e-a864-7a336616aa82" data-share-badge-host="https://www.credly.com"></div>
                 
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="TJ5954Ff5TrWv5C55sljWA" data-share-badge-host="https://www.credly.com"></div>
+                </div>        
+            <button class="btn" onclick="toggleCertifications()" style="margin-top: 20px;">Close</button>
+        </div>
+    </div>
+
+
+    <div class="popup-overlay" id="awardsPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2> Awards</h2>
+            </div>
+            <div class="awards-grid">
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ID1" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ID2" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ID3" data-share-badge-host="https://www.credly.com"></div>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ID4" data-share-badge-host="https://www.credly.com"></div>
+                
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ID5" data-share-badge-host="https://www.credly.com"></div>
                 </div>
             
             <button class="btn" onclick="toggleAwards()" style="margin-top: 20px;">Close</button>
         </div>
     </div>
     
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
     <section class="home" id="home" style="display: flex; align-items: center; padding: 10% 9%; height: 100vh;">
         <div class="home-content" style="flex: 1;">
             <h3 style="font-size: 2rem;">Hello, I'm</h3>
@@ -155,5 +208,7 @@
         }
     </script>
     <script src="script.js"></script>
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 </body>
 </html>
