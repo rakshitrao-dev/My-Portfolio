@@ -216,7 +216,19 @@ body {
     background: #000;
 }
 
-
+.bg-video {
+    position: absolute;
+    /* Increase size from 110% to 120% for higher sensitivity */
+    width: 120%; 
+    height: 120%;
+    /* Re-center the enlarged video */
+    top: -10%;
+    left: -10%;
+    object-fit: cover;
+    opacity: 0.4;
+    /* transition: 0.1s makes the movement feel "heavy"; reduce it for "snap" sensitivity */
+    transition: transform 0.05s ease-out; 
+}
 
 .video-overlay {
     position: absolute;
@@ -226,20 +238,4 @@ body {
     height: 100%;
     background: radial-gradient(circle, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 90%);
     pointer-events: none; /* Allows mouse to pass through to the script */
-}
-
-.video-foreground {
-    position: absolute;
-    /* Increase size to 120% for higher parallax sensitivity */
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    pointer-events: none; /* Prevents clicking on the YouTube player */
-}
-
-.video-foreground iframe {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
 }
