@@ -26,8 +26,8 @@
             <a href="#home" class="active">Home</a>
             <a href="#skills">Skills</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#portfolio">Certifications</a>
+            <a href="#contact">Awards</a>
         </nav>
         <a href="#" class="btn">Download CV</a>
     </header>
@@ -87,58 +87,6 @@
         </div>
 
 
-    <div class="popup-overlay" id="contactPopup">
-        <div class="glass-popup">
-            <span class="close-btn" onclick="togglePopup()">&times;</span>
-            <h2 style="margin-bottom: 10px;">Contact Details</h2>
-            <hr style="border: 0.5px solid rgba(255,255,255,0.2);">
-            <div class="popup-info">
-                <p><i class='bx bx-envelope'></i> <strong>Email:</strong> rakshitrao131@gmail.com</p>
-                <p><i class='bx bx-phone'></i> <strong>Phone:</strong> +91 XXXXX XXXXX</p>
-                <p><i class='bx bx-map'></i> <strong>Location:</strong> Bengaluru, India</p>
-            </div>
-            <button class="btn" onclick="togglePopup()" style="background: #00eeff; padding: 8px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px;">Close</button>
-        </div>
-    </div>
-
-
-
-    <nav class="bottom-nav">
-        <a href="#home"><i class='bx bx-home-alt'></i></a>
-        <a href="#skills"><i class='bx bx-user'></i></a>
-        <a href="#portfolio"><i class='bx bx-book'></i></a>
-        <a href="#contact"><i class='bx bx-message-square-detail'></i></a>
-    </nav>
-    
-
-    <script>
-        // Typing Animation Setup
-        var typed = new Typed('#typing-text', {
-            strings: [
-                'SAP Technical Consultant', 
-                'Frontend Developer', 
-                'Cybersecurity Enthusiast'
-            ],
-            typeSpeed: 70,
-            backSpeed: 40,
-            backDelay: 1500,
-            loop: true
-        });
-
-        // Popup Toggle Function
-        function togglePopup() {
-            const popup = document.getElementById('contactPopup');
-            popup.classList.toggle('active');
-        }
-
-        // Close popup if user clicks outside the glass box
-        window.onclick = function(event) {
-            const popup = document.getElementById('contactPopup');
-            if (event.target == popup) {
-                popup.classList.remove('active');
-            }
-        }
-    </script>
-    <script src="script.js"></script>
+  
 </body>
 </html>
