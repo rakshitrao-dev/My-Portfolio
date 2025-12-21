@@ -334,3 +334,41 @@ body {
 .column a:hover {
     color: var(--main-color);
 }
+
+/* Custom scrollbar for the repo list to match your theme */
+#repo-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+#repo-list::-webkit-scrollbar-thumb {
+    background: #00eeff;
+    border-radius: 10px;
+}
+
+#repo-list a:hover {
+    text-decoration: underline !important;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+
+/* Specific container for Certification badges */
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows badges to wrap to new lines */
+    justify-content: center; /* Centers the badges horizontally */
+    gap: 20px;
+    padding: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Ensure the wrapper hides the 'Expired' text accurately */
+.badge-wrapper {
+    width: 150px;
+    height: 235px; /* Adjust this to hide the bottom text exactly */
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+    flex-shrink: 0; /* Prevents badges from squishing */
+}
