@@ -95,8 +95,9 @@
 
     <div class="popup-overlay" id="awardsPopup">
         <div class="popup-content">
-            <div class="popup-header">
-                <h2> Awards</h2>
+            <div class="popup-header" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(0,238,255,0.3);padding-bottom:12px;margin-bottom:4px;">
+                <h2 style="color:#00eeff;font-size:1.4rem;letter-spacing:1px;">Awards &amp; Recognition</h2>
+                <span onclick="toggleAwards()" style="cursor:pointer;font-size:1.8rem;color:#aaa;line-height:1;padding:0 4px;">&times;</span>
             </div>
             <div class="awards-grid">
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e58e21fe-d142-4475-8930-9f875c26194f" data-share-badge-host="https://www.credly.com"></div>
@@ -105,7 +106,6 @@
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2579de63-3d01-4742-a92b-a8b6a69c7cb7" data-share-badge-host="https://www.credly.com"></div>
                 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5b869de1-6674-4afc-a6de-6a9734cb4c4e" data-share-badge-host="https://www.credly.com"></div>
             </div>
-            <button class="btn" onclick="toggleAwards()" style="margin-top: 20px;">Close</button>
         </div>
     </div>
 
@@ -201,10 +201,12 @@
 
         // Close popup when clicking on the backdrop
         window.onclick = function(event) {
-            const popup = document.getElementById('contactPopup');
-            if (event.target == popup) {
-                popup.classList.remove('active');
-            }
+            const contact = document.getElementById('contactPopup');
+            const awards = document.getElementById('awardsPopup');
+            const certs = document.getElementById('certificationsPopup');
+            if (event.target == contact) contact.classList.remove('active');
+            if (event.target == awards) awards.classList.remove('active');
+            if (event.target == certs) certs.classList.remove('active');
         }
     </script>
 
