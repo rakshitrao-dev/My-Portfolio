@@ -245,11 +245,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    padding: 20px 10px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
     margin-top: 10px;
-    max-height: 580px;
-    overflow-y: auto;
+}
+
+/* Each Credly badge wrapper — must have explicit size so iframe renders inside it */
+.badge-wrap {
+    width: 150px;
+    height: 270px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-wrap iframe {
+    width: 150px !important;
+    height: 270px !important;
+    border: none;
 }
 
 /* Optional: Style the scrollbar to match your theme */
@@ -265,12 +280,15 @@ body {
 .popup-content {
     width: 85%;
     max-width: 900px;
-    background: rgba(255, 255, 255, 0.1);
+    max-height: 85vh;
+    overflow-y: auto;
+    background: rgba(10, 10, 20, 0.92);
     backdrop-filter: blur(20px);
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 14px;
+    padding: 28px 32px;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 238, 255, 0.25);
+    box-shadow: 0 0 40px rgba(0, 238, 255, 0.1);
 }
 
 /* Dropdown Container */
